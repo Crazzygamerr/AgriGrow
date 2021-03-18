@@ -6,13 +6,13 @@ class SharedPref {
 
     static const String login = "login";
     static const String emailKey = "email";
-    static const String doctorKey = "doctor";
+    static const String expertKey = "expert";
 
     static Future setUser(String email, bool b, bool doc) async {
         final SharedPreferences pref = await SharedPreferences.getInstance();
         pref.setString(emailKey, email);
         pref.setBool(login, b);
-        pref.setBool(doctorKey, doc);
+        pref.setBool(expertKey, doc);
     }
 
     static Future<bool> getUserLogin() async {
@@ -40,7 +40,7 @@ class SharedPref {
 
     static Future<bool> getDoc() async {
         final SharedPreferences pref = await SharedPreferences.getInstance();
-        return pref.getBool(doctorKey);
+        return pref.getBool(expertKey);
     }
 
     static Future setUserLogin(bool b) async {
