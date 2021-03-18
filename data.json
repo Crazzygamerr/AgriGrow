@@ -1,0 +1,83 @@
+[
+  {
+    "Name": "Rice",
+    "Soil": "Clay Loams",
+    "Temperature": "above 21°C",
+    "Rainfall": "above 100 cm",
+    "Typeofcrop": "Kharif Crop",
+    "Description": "To grow rice, your garden must be in full sun and offer a three- to six-month growing season with average temperatures above 70 degrees Fahrenheit, water-retentive soil, a reliable source of water for irrigation, and a way to drain the water when you're ready to harvest."
+  },
+  {
+    "Name": "Wheat",
+    "Soil": "Clay Loams",
+    "Temperature": "14-18°C",
+    "Rainfall": "50 cm to 100 cm",
+    "Typeofcrop": "Rabi",
+    "Description": "Wheat needs 12 to 15 inches (31 to 38 centimeters) of water to produce a good crop. It grows best when temperatures are warm, from 70° to 75° F (21° to 24° C), but not too hot. Wheat also needs a lot of sunshine, especially when the grains are filling."
+  },
+  {
+    "Name": "Cotton",
+    "Soil": "Sandy Loams,Black Soil",
+    "Temperature": "21-30°C",
+    "Rainfall": "85 cm to 110 cm",
+    "Typeofcrop": "Kharif",
+    "Description": "Cotton is a plant that needs a long frost-free period, a lot of heat and plenty of sunshine. It prefers warm and humid climate. Cotton seeds will have a small germination rate, if the soil temperature is below 60°F (15°C). During active growth, the ideal air temperature is 70 to 100°F (21-37°C)."
+  },
+  {
+    "Name": "SugarCane",
+    "Soil": "Well drained loamy soil",
+    "Temperature": "24-30°C",
+    "Rainfall": "100 cm to 150 cm",
+    "Typeofcrop": "Kharif",
+    "Description": "New canes are usually planted by taking cuttings from old plants. These cuttings become established and after a few days buds sprout to form new stalks. Six to ten stalks grow from each plant, and the sugarcane then takes from one to two years to mature."
+  },
+  {
+    "Name": "Bajra",
+    "Soil": "black soil, sandy loam soil",
+    "Temperature": "20-30°C",
+    "Rainfall": "40 cm to 60 cm",
+    "Typeofcrop": "Kharif",
+    "Description": "Sowing. spacing 40 –45 cm between rows, 10 –15 cm within rows. Generally the crop requires low quantity of nutrients. "
+  },
+  {
+    "Name": "",
+    "Soil": "",
+    "Temperature": "",
+    "Rainfall": "",
+    "Typeofcrop": "",
+    "Description": ""
+  },
+  {
+    "Name": "",
+    "Soil": "",
+    "Temperature": "",
+    "Rainfall": "",
+    "Typeofcrop": "",
+    "Description": ""
+  },
+  {
+    "Name": "",
+    "Soil": "",
+    "Temperature": "",
+    "Rainfall": "",
+    "Typeofcrop": "",
+    "Description": ""
+  },
+  {
+    "Name": "",
+    "Soil": "",
+    "Temperature": "",
+    "Rainfall": "",
+    "Typeofcrop": "",
+    "Description": ""
+  },
+  {
+    "Name": "",
+    "Soil": "",
+    "Temperature": "",
+    "Rainfall": "",
+    "Typeofcrop": "",
+    "Description": ""
+  }
+]
+

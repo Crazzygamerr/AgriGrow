@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "969294405790",
+    "project_id": "virtual-healthcare-81e57",
+    "storage_bucket": "virtual-healthcare-81e57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969294405790:android:7e9cf06f4a905fd7101b8f",
+        "android_client_info": {
+          "package_name": "com.mobile.agrigrow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "969294405790-303scorg05e969ijrfiqdelb0s6pjhrp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7_i9sfqJ-UBMx9IUzDLjflsjbGYNtlj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "969294405790-303scorg05e969ijrfiqdelb0s6pjhrp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
