@@ -21,13 +21,21 @@ class _LoginState extends State<Login> {
     @override
     Widget build(BuildContext context) {
         return Scaffold(
-            //backgroundColor: Colors.teal,
+            backgroundColor: Colors.green,
             body: SafeArea(
                 child: SingleChildScrollView(
+           /* child: Container(
+            constraints: BoxConstraints.expand(),
+        decoration: BoxDecoration(
+        image: DecorationImage(
+        image: AssetImage('images/bg1.jpg'),
+        ),*/
                     child: Container(
+
+
                         padding: EdgeInsets.fromLTRB(
                                 ScreenUtil().setWidth(10),
-                                ScreenUtil().setHeight(10),
+                                ScreenUtil().setHeight(180),
                                 ScreenUtil().setWidth(10),
                                 ScreenUtil().setHeight(10)
                         ),
@@ -35,23 +43,25 @@ class _LoginState extends State<Login> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
                                 CircleAvatar(
-                                    radius: 50.0,
+                                    radius: 85.0,
                                     backgroundImage: AssetImage('images/agrigrow.jpg'),
                                 ),
                                 Text(
                                     'AgriGrow',
                                     style: TextStyle(
-                                        fontFamily: 'Pacifico',
+                                        fontFamily: 'Tangerine',
                                         fontSize: ScreenUtil().setSp(40),
                                         color: Colors.white,
-                                        fontWeight: FontWeight.bold,
+                                        letterSpacing: 1.5,
+                                        fontStyle: FontStyle.italic,
+                                        fontWeight: FontWeight.w500,
                                     ),
                                 ),
                                 Text(
-                                    '*insert dsecription here*',
+                                    'Farming and More...',
                                     style: TextStyle(
-                                        fontFamily: 'Source Sans Pro',
-                                        //color: Colors.teal.shade100,
+                                        fontFamily: 'SourceSansPro',
+                                        color: Colors.teal.shade100,
                                         fontSize: ScreenUtil().setSp(20),
                                         letterSpacing: 2.5,
                                         fontWeight: FontWeight.bold,
@@ -62,24 +72,36 @@ class _LoginState extends State<Login> {
                                     height: ScreenUtil().setHeight(20),
                                     width: ScreenUtil().setWidth(150),
                                     child: Divider(
-                                        //color: Colors.teal.shade100,
+                                        color: Colors.teal.shade100,
                                     ),
                                 ),
 
                                 TextFormField(
+
                                     controller: emailCon,
                                     keyboardType: TextInputType.emailAddress,
                                     style: TextStyle(
-                                        color: Colors.white,
+                                        color: Colors.white.withOpacity(0.5),
                                         fontSize: ScreenUtil().setSp(15),
                                     ),
                                     cursorColor: Colors.white,
                                     decoration: InputDecoration(
-                                        labelText: 'Enter your email id',
+
+                                        labelText: 'Email Address',
                                         labelStyle: TextStyle(
+                                            fontFamily: 'KaushanScript',
+                                            fontStyle: FontStyle.italic,
                                             color: Colors.white,
                                             fontSize: ScreenUtil().setSp(15),
                                         ),
+                                        border: new OutlineInputBorder(
+                                            borderRadius: new BorderRadius.circular(25.0),
+                                            borderSide: new BorderSide(
+                                            ),
+
+                                        ),
+
+                                        fillColor: Colors.white,
                                     ),
                                 ),
 
@@ -88,7 +110,7 @@ class _LoginState extends State<Login> {
                                     keyboardType: TextInputType.visiblePassword,
                                     obscureText: true,
                                     style: TextStyle(
-                                        color: Colors.white,
+                                        color: Colors.white.withOpacity(0.5),
                                         fontSize: ScreenUtil().setSp(15),
                                     ),
                                     cursorColor: Colors.white,
@@ -96,8 +118,18 @@ class _LoginState extends State<Login> {
                                         labelText: 'Enter your Password',
                                         labelStyle: TextStyle(
                                             color: Colors.white,
+                                            fontFamily: 'KaushanScript',
+                                            fontStyle: FontStyle.italic,
                                             fontSize: ScreenUtil().setSp(15),
                                         ),
+                                        border: new OutlineInputBorder(
+                                            borderRadius: new BorderRadius.circular(25.0),
+                                            borderSide: new BorderSide(
+                                            ),
+
+                                        ),
+
+                                        fillColor: Colors.white,
                                     ),
                                 ),
 
@@ -126,13 +158,19 @@ class _LoginState extends State<Login> {
                                             Fluttertoast.showToast(msg: e.message);
                                         });
                                     },
+                                    style: ElevatedButton.styleFrom(
+                                        primary: Colors.white, // background
+                                        onPrimary: Colors.green, // foreground
+                                    ),
                                     child: Padding(
                                         padding: EdgeInsets.fromLTRB(
                                                 ScreenUtil().setWidth(10),
                                                 ScreenUtil().setHeight(10),
                                                 ScreenUtil().setWidth(10),
                                                 ScreenUtil().setHeight(10)
+
                                         ),
+
                                         child: Text(
                                             'Login',
                                             style: TextStyle(
@@ -143,7 +181,7 @@ class _LoginState extends State<Login> {
                                 ),
 
                                 SizedBox(
-                                    height: ScreenUtil().setHeight(30),
+                                    height: ScreenUtil().setHeight(20),
                                 ),
 
                                 TextButton(
