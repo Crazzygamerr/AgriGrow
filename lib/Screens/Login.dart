@@ -21,7 +21,7 @@ class _LoginState extends State<Login> {
     @override
     Widget build(BuildContext context) {
         return Scaffold(
-            backgroundColor: Colors.teal,
+            //backgroundColor: Colors.teal,
             body: SafeArea(
                 child: SingleChildScrollView(
                     child: Container(
@@ -51,7 +51,7 @@ class _LoginState extends State<Login> {
                                     '*insert dsecription here*',
                                     style: TextStyle(
                                         fontFamily: 'Source Sans Pro',
-                                        color: Colors.teal.shade100,
+                                        //color: Colors.teal.shade100,
                                         fontSize: ScreenUtil().setSp(20),
                                         letterSpacing: 2.5,
                                         fontWeight: FontWeight.bold,
@@ -62,7 +62,7 @@ class _LoginState extends State<Login> {
                                     height: ScreenUtil().setHeight(20),
                                     width: ScreenUtil().setWidth(150),
                                     child: Divider(
-                                        color: Colors.teal.shade100,
+                                        //color: Colors.teal.shade100,
                                     ),
                                 ),
 

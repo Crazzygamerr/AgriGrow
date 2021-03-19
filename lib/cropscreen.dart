@@ -63,7 +63,7 @@ class _CropScreenState extends State<CropScreen> {
                                 map["Soil"],
                                 style: TextStyle(
                                     fontFamily: 'Source Sans Pro',
-                                    color: Colors.teal.shade100,
+                                    //color: Colors.teal.shade100,
                                     fontSize: 28.0,
                                     letterSpacing: 2.5,
                                     fontWeight: FontWeight.bold,
@@ -74,7 +74,7 @@ class _CropScreenState extends State<CropScreen> {
                                 map["Temperature"],
                                 style: TextStyle(
                                     fontFamily: 'Source Sans Pro',
-                                    color: Colors.teal.shade100,
+                                    //color: Colors.teal.shade100,
                                     fontSize: 28.0,
                                     letterSpacing: 2.5,
                                     fontWeight: FontWeight.bold,
@@ -85,7 +85,7 @@ class _CropScreenState extends State<CropScreen> {
                                 map["Rainfall"],
                                 style: TextStyle(
                                     fontFamily: 'Source Sans Pro',
-                                    color: Colors.teal.shade100,
+                                    //color: Colors.teal.shade100,
                                     fontSize: 28.0,
                                     letterSpacing: 2.5,
                                     fontWeight: FontWeight.bold,
@@ -96,7 +96,7 @@ class _CropScreenState extends State<CropScreen> {
                                 map["Typeofcrop"],
                                 style: TextStyle(
                                     fontFamily: 'Source Sans Pro',
-                                    color: Colors.teal.shade100,
+                                    //color: Colors.teal.shade100,
                                     fontSize: 28.0,
                                     letterSpacing: 2.5,
                                     fontWeight: FontWeight.bold,
@@ -107,7 +107,7 @@ class _CropScreenState extends State<CropScreen> {
                                 map["Description"],
                                 style: TextStyle(
                                     fontFamily: 'Source Sans Pro',
-                                    color: Colors.teal.shade100,
+                                    //color: Colors.teal.shade100,
                                     fontSize: 28.0,
                                     letterSpacing: 2.5,
                                     fontWeight: FontWeight.bold,

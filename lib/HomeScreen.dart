@@ -67,9 +67,9 @@ class _HomePageState extends State<HomePage> {
     Widget build(BuildContext context) {
 
         return Scaffold(
-            backgroundColor: Colors.teal,
+            //backgroundColor: Colors.teal,
             appBar: AppBar(
-                backgroundColor: Colors.teal,
+                //backgroundColor: Colors.teal,
                 elevation: 0,
                 title: (!searching)
                         ? Text(chat?"Chats":"Experts")
@@ -334,7 +334,7 @@ class _HomePageState extends State<HomePage> {
                                     height: ScreenUtil().setHeight(20),
                                     width: double.infinity,
                                     child: Divider(
-                                        color: Colors.teal.shade300,
+                                        //color: Colors.teal.shade300,
                                     ),
                                 ),
                                 Container(

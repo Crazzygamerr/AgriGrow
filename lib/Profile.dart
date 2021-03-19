@@ -24,7 +24,7 @@ class _ProfileState extends State<Profile> {
     @override
     Widget build(BuildContext context) {
         return Scaffold(
-            backgroundColor: Colors.teal.shade600,
+            //backgroundColor: Colors.teal.shade600,
             appBar: AppBar(
                 title: Text(
                     "Expert's Profile",
@@ -34,7 +34,7 @@ class _ProfileState extends State<Profile> {
                         fontWeight: FontWeight.bold,
                     ),
                 ),
-                backgroundColor: Colors.teal.shade700,
+                //backgroundColor: Colors.teal.shade700,
             ),
             body: StreamBuilder<DocumentSnapshot>(
                     stream: ref.snapshots(),

@@ -21,7 +21,7 @@ class _RegisterState extends State<Register> {
     @override
     Widget build(BuildContext context) {
         return Scaffold(
-            backgroundColor: Colors.teal,
+            //backgroundColor: Colors.teal,
             body: SafeArea(
                 child: SingleChildScrollView(
                     child: Container(
@@ -51,7 +51,7 @@ class _RegisterState extends State<Register> {
                                     '*insert descriptions here*',
                                     style: TextStyle(
                                         fontFamily: 'Source Sans Pro',
-                                        color: Colors.teal.shade100,
+                                        //color: Colors.teal.shade100,
                                         fontSize: 20.0,
                                         letterSpacing: 2.5,
                                         fontWeight: FontWeight.bold,
@@ -61,7 +61,7 @@ class _RegisterState extends State<Register> {
                                     height: 20.0,
                                     width: 150.0,
                                     child: Divider(
-                                        color: Colors.teal.shade100,
+                                        //color: Colors.teal.shade100,
                                     ),
                                 ),
 

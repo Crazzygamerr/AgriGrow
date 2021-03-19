@@ -38,9 +38,9 @@ class _ExpertInfoState extends State<ExpertInfo> {
     @override
     Widget build(BuildContext context) {
         return Scaffold(
-            backgroundColor: Colors.teal,
+            //backgroundColor: Colors.teal,
             appBar: AppBar(
-                backgroundColor: Colors.teal,
+                //backgroundColor: Colors.teal,
                 elevation: 0,
                 title: GestureDetector(
                     onTap: () {
@@ -86,7 +86,7 @@ class _ExpertInfoState extends State<ExpertInfo> {
                                     '*insert desctiption here*',
                                     style: TextStyle(
                                         fontFamily: 'Source Sans Pro',
-                                        color: Colors.teal.shade100,
+                                        //color: Colors.teal.shade100,
                                         fontSize: ScreenUtil().setSp(20),
                                         letterSpacing: 2.5,
                                         fontWeight: FontWeight.bold,
@@ -97,7 +97,7 @@ class _ExpertInfoState extends State<ExpertInfo> {
                                     height: ScreenUtil().setHeight(20),
                                     width: ScreenUtil().setWidth(150),
                                     child: Divider(
-                                        color: Colors.teal.shade100,
+                                        //color: Colors.teal.shade100,
                                     ),
                                 ),
                                 TextFormField(
