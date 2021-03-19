@@ -21,13 +21,13 @@ class _RegisterState extends State<Register> {
     @override
     Widget build(BuildContext context) {
         return Scaffold(
-            //backgroundColor: Colors.teal,
+            backgroundColor: Colors.green,
             body: SafeArea(
                 child: SingleChildScrollView(
                     child: Container(
                         padding: EdgeInsets.fromLTRB(
                                 ScreenUtil().setWidth(10),
-                                ScreenUtil().setHeight(10),
+                                ScreenUtil().setHeight(160),
                                 ScreenUtil().setWidth(10),
                                 ScreenUtil().setHeight(10)
                         ),
@@ -35,24 +35,26 @@ class _RegisterState extends State<Register> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
                                 CircleAvatar(
-                                    radius: 50.0,
+                                    radius: 85.0,
                                     backgroundImage: AssetImage('images/agrigrow.jpg'),
                                 ),
                                 Text(
                                     'AgriGrow',
                                     style: TextStyle(
-                                        fontFamily: 'Pacifico',
-                                        fontSize: 40.0,
+                                        fontFamily: 'Tangerine',
+                                        fontSize: ScreenUtil().setSp(40),
                                         color: Colors.white,
-                                        fontWeight: FontWeight.bold,
+                                        letterSpacing: 1.5,
+                                        fontStyle: FontStyle.italic,
+                                        fontWeight: FontWeight.w500,
                                     ),
                                 ),
                                 Text(
-                                    '*insert descriptions here*',
+                                    'Farming and More...',
                                     style: TextStyle(
-                                        fontFamily: 'Source Sans Pro',
-                                        //color: Colors.teal.shade100,
-                                        fontSize: 20.0,
+                                        fontFamily: 'SourceSansPro',
+                                        color: Colors.teal.shade100,
+                                        fontSize: ScreenUtil().setSp(20),
                                         letterSpacing: 2.5,
                                         fontWeight: FontWeight.bold,
                                     ),
@@ -61,7 +63,7 @@ class _RegisterState extends State<Register> {
                                     height: 20.0,
                                     width: 150.0,
                                     child: Divider(
-                                        //color: Colors.teal.shade100,
+                                        color: Colors.teal.shade100,
                                     ),
                                 ),
 
@@ -76,9 +78,19 @@ class _RegisterState extends State<Register> {
                                     decoration: InputDecoration(
                                         labelText: 'Enter your email id',
                                         labelStyle: TextStyle(
+                                            fontFamily: 'KaushanScript',
+                                            fontStyle: FontStyle.italic,
                                             color: Colors.white,
                                             fontSize: ScreenUtil().setSp(15),
                                         ),
+                                        border: new OutlineInputBorder(
+                                            borderRadius: new BorderRadius.circular(25.0),
+                                            borderSide: new BorderSide(
+                                            ),
+
+                                        ),
+
+                                        fillColor: Colors.white,
                                     ),
                                 ),
                                 TextFormField(
@@ -93,9 +105,19 @@ class _RegisterState extends State<Register> {
                                     decoration: InputDecoration(
                                         labelText: 'Enter the Password',
                                         labelStyle: TextStyle(
+                                            fontFamily: 'KaushanScript',
+                                            fontStyle: FontStyle.italic,
                                             color: Colors.white,
                                             fontSize: ScreenUtil().setSp(15),
                                         ),
+                                        border: new OutlineInputBorder(
+                                            borderRadius: new BorderRadius.circular(25.0),
+                                            borderSide: new BorderSide(
+                                            ),
+
+                                        ),
+
+                                        fillColor: Colors.white,
                                     ),
                                 ),
 
@@ -121,6 +143,10 @@ class _RegisterState extends State<Register> {
                                             Fluttertoast.showToast(msg: e.message);
                                         });
                                     },
+                                    style: ElevatedButton.styleFrom(
+                                        primary: Colors.white, // background
+                                        onPrimary: Colors.green, // foreground
+                                    ),
                                     child: Padding(
                                         padding: EdgeInsets.fromLTRB(
                                                 ScreenUtil().setWidth(10),
@@ -153,6 +179,10 @@ class _RegisterState extends State<Register> {
                                             Fluttertoast.showToast(msg: e.message);
                                         });
                                     },
+                                    style: ElevatedButton.styleFrom(
+                                        primary: Colors.white, // background
+                                        onPrimary: Colors.green, // foreground
+                                    ),
                                     child: Padding(
                                         padding: EdgeInsets.fromLTRB(
                                                 ScreenUtil().setWidth(10),
