@@ -1,3 +1,4 @@
+import 'package:agrigrow/HomeScreen.dart';
 import 'package:agrigrow/Screens/Login.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -38,7 +39,7 @@ class _LoadingState extends State<Loading> {
   void initState() {
     b().then((value){
       if(value){
-        //Navigator.pushAndRemoveUntil(context, new MaterialPageRoute(builder: (context)=> HomePage()), (route) => false);
+        Navigator.pushAndRemoveUntil(context, new MaterialPageRoute(builder: (context)=> HomePage()), (route) => false);
       } else {
         Navigator.pushAndRemoveUntil(context, new MaterialPageRoute(builder: (context)=> Login()), (route) => false);
       }

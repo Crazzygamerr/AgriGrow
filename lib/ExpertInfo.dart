@@ -1,3 +1,4 @@
+import 'package:agrigrow/HomeScreen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -43,7 +44,7 @@ class _ExpertInfoState extends State<ExpertInfo> {
                 elevation: 0,
                 title: GestureDetector(
                     onTap: () {
-                        //Navigator.pushAndRemoveUntil(context, new MaterialPageRoute(builder: (context) => HomePage(),), (route) => false);
+                        Navigator.pushAndRemoveUntil(context, new MaterialPageRoute(builder: (context) => HomePage(),), (route) => false);
                     },
                     child: Container(
                         padding: EdgeInsets.fromLTRB(
@@ -195,7 +196,7 @@ class _ExpertInfoState extends State<ExpertInfo> {
                                             "Specialization": textCon3.text,
                                             "Expertise": textCon4.text,
                                         });
-                                        //Navigator.pushAndRemoveUntil(context, new MaterialPageRoute(builder: (context) => HomePage(),), (route) => false);
+                                        Navigator.pushAndRemoveUntil(context, new MaterialPageRoute(builder: (context) => HomePage(),), (route) => false);
                                     },
                                     child: Padding(
                                         padding: EdgeInsets.fromLTRB(

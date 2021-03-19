@@ -1,3 +1,4 @@
+import 'package:agrigrow/HomeScreen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -113,11 +114,11 @@ class _LoginState extends State<Login> {
                                             FirebaseFirestore.instance.collection("Expert").doc(emailCon.text).get().then((snapshot) {
                                                 if(snapshot.exists){
                                                     SharedPref.setUser(user.user.email, true, true).then((value) {
-                                                        //Navigator.pushAndRemoveUntil(context, new MaterialPageRoute(builder: (context) => HomePage(),), (route) => false);
+                                                        Navigator.pushAndRemoveUntil(context, new MaterialPageRoute(builder: (context) => HomePage(),), (route) => false);
                                                     });
                                                 } else {
                                                     SharedPref.setUser(user.user.email, true, false).then((value) {
-                                                        //Navigator.pushAndRemoveUntil(context, new MaterialPageRoute(builder: (context) => HomePage(),), (route) => false);
+                                                        Navigator.pushAndRemoveUntil(context, new MaterialPageRoute(builder: (context) => HomePage(),), (route) => false);
                                                     });
                                                 }
                                             });

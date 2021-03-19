@@ -1,3 +1,4 @@
+import 'package:agrigrow/HomeScreen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -115,7 +116,7 @@ class _RegisterState extends State<Register> {
                                                     .set({
                                                 "Created on:": DateTime.now(),
                                             });
-                                            //Navigator.pushAndRemoveUntil(context, new MaterialPageRoute(builder: (context) => HomePage(),), (route) => false);
+                                            Navigator.pushAndRemoveUntil(context, new MaterialPageRoute(builder: (context) => HomePage(),), (route) => false);
                                         }).catchError((e){
                                             Fluttertoast.showToast(msg: e.message);
                                         });
