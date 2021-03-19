@@ -112,7 +112,7 @@ class _ProfileState extends State<Profile> {
                                                 ),
                                                 FloatingActionButton(
                                                     onPressed: (){
-                                                        ref.collection("Experts").doc(email).get().then((value) {
+                                                        ref.collection("Farmers").doc(email).get().then((value) {
                                                             Navigator.push(
                                                                 context,
                                                                 new MaterialPageRoute(

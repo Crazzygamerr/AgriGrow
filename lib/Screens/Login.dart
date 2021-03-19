@@ -111,7 +111,7 @@ class _LoginState extends State<Login> {
                                             email: emailCon.text.toString(),
                                             password: passCon.text.toString(),
                                         ).then((UserCredential user) {
-                                            FirebaseFirestore.instance.collection("Expert").doc(emailCon.text).get().then((snapshot) {
+                                            FirebaseFirestore.instance.collection("Experts").doc(emailCon.text).get().then((snapshot) {
                                                 if(snapshot.exists){
                                                     SharedPref.setUser(user.user.email, true, true).then((value) {
                                                         Navigator.pushAndRemoveUntil(context, new MaterialPageRoute(builder: (context) => HomePage(),), (route) => false);
