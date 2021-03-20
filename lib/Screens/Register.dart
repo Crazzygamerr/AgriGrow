@@ -66,6 +66,9 @@ class _RegisterState extends State<Register> {
                                         color: Colors.teal.shade100,
                                     ),
                                 ),
+                                SizedBox(
+                                    height: ScreenUtil().setHeight(10),
+                                ),
 
                                 TextFormField(
                                     controller: emailCon,
@@ -92,6 +95,9 @@ class _RegisterState extends State<Register> {
 
                                         fillColor: Colors.white,
                                     ),
+                                ),
+                                SizedBox(
+                                    height: ScreenUtil().setHeight(20),
                                 ),
                                 TextFormField(
                                     controller: passCon,
@@ -164,7 +170,7 @@ class _RegisterState extends State<Register> {
                                 ),
 
                                 SizedBox(
-                                    height: ScreenUtil().setHeight(30),
+                                    height: ScreenUtil().setHeight(10),
                                 ),
 
                                 ElevatedButton(
@@ -200,7 +206,7 @@ class _RegisterState extends State<Register> {
                                 ),
 
                                 SizedBox(
-                                    height: ScreenUtil().setHeight(30),
+                                    height: ScreenUtil().setHeight(10),
                                 ),
 
                                 TextButton(
