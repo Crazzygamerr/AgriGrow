@@ -75,6 +75,9 @@ class _LoginState extends State<Login> {
                                         color: Colors.teal.shade100,
                                     ),
                                 ),
+                                SizedBox(
+                                    height: ScreenUtil().setHeight(10),
+                                ),
 
                                 TextFormField(
 
@@ -104,7 +107,9 @@ class _LoginState extends State<Login> {
                                         fillColor: Colors.white,
                                     ),
                                 ),
-
+                                SizedBox(
+                                    height: ScreenUtil().setHeight(20),
+                                ),
                                 TextFormField(
                                     controller: passCon,
                                     keyboardType: TextInputType.visiblePassword,
