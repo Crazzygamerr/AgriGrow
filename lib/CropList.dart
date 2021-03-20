@@ -14,13 +14,14 @@ class _CropListState extends State<CropList> {
     Widget build(BuildContext context) {
         return Scaffold(
             appBar: AppBar(
-                backgroundColor: Colors.green,
                 title: Text(
                     "List of crops",
                     style: TextStyle(
                         fontSize: ScreenUtil().setSp(14),
+                        color: Colors.white,
                     ),
                 ),
+                backgroundColor: Colors.green,
             ),
             body: SafeArea(
                 child: FutureBuilder(
@@ -49,6 +50,11 @@ class _CropListState extends State<CropList> {
                                                 ),
                                                 child: Text(
                                                     mydata[pos]["Name"].toString(),
+                                                    style: TextStyle(
+                                                        fontFamily: 'Source Sans Pro',
+                                                        color: Colors.green,
+
+                                                    ),
                                                 ),
                                             ),
                                         ),
