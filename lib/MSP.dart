@@ -16,6 +16,7 @@ class _MSPState extends State<MSP> {
     Widget build(BuildContext context) {
         return Scaffold(
             appBar: AppBar(
+                backgroundColor: Colors.green,
                 title: Text(
                     "Minimum Support Price (MSP)",
                     style: TextStyle(
@@ -45,6 +46,7 @@ class _MSPState extends State<MSP> {
                                         fontSize: ScreenUtil().setSp(15),
                                         fontWeight: FontWeight.w300,
                                         decoration: TextDecoration.underline,
+                                        color: Colors.blue
                                     ),
                                     textAlign: TextAlign.start,
                                 ),

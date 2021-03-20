@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:agrigrow/CropList.dart';
-//import 'package:agrigrow/MSP.dart';
+import 'package:agrigrow/MSP.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -327,7 +327,7 @@ class _HomePageState extends State<HomePage> {
                                     width: double.infinity,
                                     child: TextButton(
                                         onPressed: (){
-                                            //Navigator.push(context, new MaterialPageRoute(builder: (context) => MSP(),),);
+                                            Navigator.push(context, new MaterialPageRoute(builder: (context) => MSP(),),);
                                         },
                                         child: Text(
                                             "Check MSP",
