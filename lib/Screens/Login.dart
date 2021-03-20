@@ -84,7 +84,7 @@ class _LoginState extends State<Login> {
                                     controller: emailCon,
                                     keyboardType: TextInputType.emailAddress,
                                     style: TextStyle(
-                                        color: Colors.white.withOpacity(0.5),
+                                        color: Colors.white,
                                         fontSize: ScreenUtil().setSp(15),
                                     ),
                                     cursorColor: Colors.white,
@@ -115,7 +115,7 @@ class _LoginState extends State<Login> {
                                     keyboardType: TextInputType.visiblePassword,
                                     obscureText: true,
                                     style: TextStyle(
-                                        color: Colors.white.withOpacity(0.5),
+                                        color: Colors.white,
                                         fontSize: ScreenUtil().setSp(15),
                                     ),
                                     cursorColor: Colors.white,
