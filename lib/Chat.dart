@@ -66,6 +66,7 @@ class _ChatState extends State<Chat> {
     Widget build(BuildContext context) {
         return Scaffold(
             appBar: AppBar(
+                backgroundColor: Colors.green,
                 leading: GestureDetector(
                     onTap: () {
                         if(isExpert){

@@ -89,7 +89,7 @@ class _HomePageState extends State<HomePage> {
                         FocusScope.of(context).unfocus();
                     },
                 ),
-                /*actions: [
+                actions: [
                         (!chat)?GestureDetector(
                             onTap: () {
                                 if(searching) {
@@ -142,7 +142,7 @@ class _HomePageState extends State<HomePage> {
                             ),
                         ):Container(),
 
-                    ],*/
+                    ],
             ),
             drawer: Container(
                 color: Colors.white,

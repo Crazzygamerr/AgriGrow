@@ -17,6 +17,7 @@ class _LoginState extends State<Login> {
 
     TextEditingController emailCon = new TextEditingController();
     TextEditingController passCon = new TextEditingController();
+    FocusNode node = new FocusNode();
 
     @override
     Widget build(BuildContext context) {
@@ -80,16 +81,17 @@ class _LoginState extends State<Login> {
                                 ),
 
                                 TextFormField(
-
                                     controller: emailCon,
                                     keyboardType: TextInputType.emailAddress,
                                     style: TextStyle(
-                                        //color: Colors.white,
+                                        color: Colors.white,
                                         fontSize: ScreenUtil().setSp(15),
                                     ),
-                                    //cursorColor: Colors.white,
+                                    cursorColor: Colors.white,
+                                    onEditingComplete: (){
+                                        node.requestFocus();
+                                    },
                                     decoration: InputDecoration(
-
                                         labelText: 'Email Address',
                                         labelStyle: TextStyle(
                                             fontFamily: 'KaushanScript',
@@ -101,9 +103,7 @@ class _LoginState extends State<Login> {
                                             borderRadius: new BorderRadius.circular(25.0),
                                             borderSide: new BorderSide(
                                             ),
-
                                         ),
-
                                         fillColor: Colors.white,
                                     ),
                                 ),
@@ -112,13 +112,17 @@ class _LoginState extends State<Login> {
                                 ),
                                 TextFormField(
                                     controller: passCon,
+                                    focusNode: node,
                                     keyboardType: TextInputType.visiblePassword,
                                     obscureText: true,
                                     style: TextStyle(
-                                        //color: Colors.white,
+                                        color: Colors.white,
                                         fontSize: ScreenUtil().setSp(15),
                                     ),
-                                    //cursorColor: Colors.white,
+                                    cursorColor: Colors.white,
+                                    onEditingComplete: () {
+                                        loginFunc();
+                                    },
                                     decoration: InputDecoration(
                                         labelText: 'Enter your Password',
                                         labelStyle: TextStyle(
@@ -144,24 +148,7 @@ class _LoginState extends State<Login> {
 
                                 ElevatedButton(
                                     onPressed: () {
-                                        FirebaseAuth.instance.signInWithEmailAndPassword(
-                                            email: emailCon.text.toString(),
-                                            password: passCon.text.toString(),
-                                        ).then((UserCredential user) {
-                                            FirebaseFirestore.instance.collection("Experts").doc(emailCon.text).get().then((snapshot) {
-                                                if(snapshot.exists){
-                                                    SharedPref.setUser(user.user.email, true, true).then((value) {
-                                                        Navigator.pushAndRemoveUntil(context, new MaterialPageRoute(builder: (context) => HomePage(),), (route) => false);
-                                                    });
-                                                } else {
-                                                    SharedPref.setUser(user.user.email, true, false).then((value) {
-                                                        Navigator.pushAndRemoveUntil(context, new MaterialPageRoute(builder: (context) => HomePage(),), (route) => false);
-                                                    });
-                                                }
-                                            });
-                                        }).catchError((e){
-                                            Fluttertoast.showToast(msg: e.message);
-                                        });
+                                        loginFunc();
                                     },
                                     style: ElevatedButton.styleFrom(
                                         primary: Colors.white, // background
@@ -196,7 +183,7 @@ class _LoginState extends State<Login> {
                                     child: Text(
                                         "New user? Register",
                                         style: TextStyle(
-                                            //color: Colors.white,
+                                            color: Colors.white,
                                         ),
                                     ),
                                 ),
@@ -207,5 +194,26 @@ class _LoginState extends State<Login> {
                 ),
             ),
         );
+    }
+
+    void loginFunc() async {
+        FirebaseAuth.instance.signInWithEmailAndPassword(
+            email: emailCon.text.toString(),
+            password: passCon.text.toString(),
+        ).then((UserCredential user) {
+            FirebaseFirestore.instance.collection("Experts").doc(emailCon.text).get().then((snapshot) {
+                if(snapshot.exists){
+                    SharedPref.setUser(user.user.email, true, true).then((value) {
+                        Navigator.pushAndRemoveUntil(context, new MaterialPageRoute(builder: (context) => HomePage(),), (route) => false);
+                    });
+                } else {
+                    SharedPref.setUser(user.user.email, true, false).then((value) {
+                        Navigator.pushAndRemoveUntil(context, new MaterialPageRoute(builder: (context) => HomePage(),), (route) => false);
+                    });
+                }
+            });
+        }).catchError((e){
+            Fluttertoast.showToast(msg: e.message);
+        });
     }
 }

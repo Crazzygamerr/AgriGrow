@@ -18,6 +18,7 @@ class _RegisterState extends State<Register> {
 
     TextEditingController emailCon = new TextEditingController();
     TextEditingController passCon = new TextEditingController();
+    FocusNode node = new FocusNode();
 
     @override
     Widget build(BuildContext context) {
@@ -75,10 +76,13 @@ class _RegisterState extends State<Register> {
                                     controller: emailCon,
                                     keyboardType: TextInputType.emailAddress,
                                     style: TextStyle(
-                                        //color: Colors.white,
+                                        color: Colors.white,
                                         fontSize: ScreenUtil().setSp(15),
                                     ),
-                                    //cursorColor: Colors.white,
+                                    cursorColor: Colors.white,
+                                    onEditingComplete: (){
+                                        node.requestFocus();
+                                    },
                                     decoration: InputDecoration(
                                         labelText: 'Enter your email id',
                                         labelStyle: TextStyle(
@@ -102,13 +106,14 @@ class _RegisterState extends State<Register> {
                                 ),
                                 TextFormField(
                                     controller: passCon,
+                                    focusNode: node,
                                     keyboardType: TextInputType.visiblePassword,
                                     obscureText: true,
                                     style: TextStyle(
-                                        //color: Colors.white,
+                                        color: Colors.white,
                                         fontSize: ScreenUtil().setSp(15),
                                     ),
-                                    //cursorColor: Colors.white,
+                                    cursorColor: Colors.white,
                                     decoration: InputDecoration(
                                         labelText: 'Enter the Password',
                                         labelStyle: TextStyle(
@@ -217,7 +222,7 @@ class _RegisterState extends State<Register> {
                                     child: Text(
                                         "Existing user? Login",
                                         style: TextStyle(
-                                            //color: Colors.white,
+                                            color: Colors.white,
                                         ),
                                     ),
                                 ),
