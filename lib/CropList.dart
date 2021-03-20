@@ -38,7 +38,8 @@ class _CropListState extends State<CropList> {
                                 itemBuilder: (context, pos) {
                                     return GestureDetector(
                                         onTap: () {
-                                            Navigator.push(context, new MaterialPageRoute(builder: (context) => CropScreen(mydata[pos]),),);
+                                            if(pos <= 4)
+                                                Navigator.push(context, new MaterialPageRoute(builder: (context) => CropScreen(mydata[pos]),),);
                                         },
                                         child: Card(
                                             child: Container(

@@ -232,15 +232,19 @@ class _HomePageState extends State<HomePage> {
                                             "Change details",
                                             style: TextStyle(
                                                 fontSize: ScreenUtil().setSp(13),
+                                                color: Colors.green.shade600,
                                             ),
                                         ),
                                     ),
                                 ):Container(),
 
-                                SizedBox(
-                                    height: ScreenUtil().setHeight((isExpert)?30:0),
-
-                                ),
+                                (isExpert)?SizedBox(
+                                    height: ScreenUtil().setHeight(30),
+                                    width: double.infinity,
+                                    child: Divider(
+                                        color: Colors.teal.shade300,
+                                    ),
+                                ):Container(),
 
                                 (!isExpert)?Container(
                                     width: double.infinity,
@@ -264,12 +268,12 @@ class _HomePageState extends State<HomePage> {
                                     ),
                                 ):Container(),
 
-                                SizedBox(
-                                    height: ScreenUtil().setHeight((!isExpert)?30:0),
+                                (!isExpert)?SizedBox(
+                                    height: ScreenUtil().setHeight(30),
                                     child: Divider(
                                         color: Colors.teal.shade300,
                                     ),
-                                ),
+                                ):Container(),
 
                                 Container(
                                     width: double.infinity,
