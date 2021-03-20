@@ -53,12 +53,14 @@ class _CropScreenState extends State<CropScreen> {
 
 
                             Text(
+
                                 map["Name"],
                                 style: TextStyle(
-                                    fontFamily: 'Source Sans Pro',
+                                    fontFamily: 'Tangerine',
                                     fontSize: ScreenUtil().setSp(50),
                                     //color: Colors.white,
                                     fontWeight: FontWeight.bold,
+                                    fontStyle: FontStyle.italic,
                                 ),
                             ),
                             Text(
@@ -116,6 +118,7 @@ class _CropScreenState extends State<CropScreen> {
                                         fontSize: ScreenUtil().setSp(18),
                                         letterSpacing: 2.5,
                                         fontWeight: FontWeight.bold,
+                                       // fontStyle: FontStyle.italic,
                                     ),
                                 ),
                             ),
@@ -127,6 +130,7 @@ class _CropScreenState extends State<CropScreen> {
                                     fontSize: ScreenUtil().setSp(12),
                                     letterSpacing: 2.5,
                                     fontWeight: FontWeight.bold,
+                                    fontStyle: FontStyle.italic,
                                 ),
                             ),
 
