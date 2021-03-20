@@ -11,6 +11,7 @@ import 'package:agrigrow/Shared_pref.dart';
 import 'package:agrigrow/chat.dart';
 import 'package:agrigrow/profile.dart';
 import 'package:agrigrow/screens/Login.dart';
+import 'package:agrigrow/Weather.dart';
 
 class HomePage extends StatefulWidget {
     @override
@@ -335,6 +336,30 @@ class _HomePageState extends State<HomePage> {
                                         },
                                         child: Text(
                                             "Check MSP",
+                                            style: TextStyle(
+                                                fontSize: ScreenUtil().setSp(13),
+                                                color: Colors.green,
+                                            ),
+                                        ),
+                                    ),
+                                ),
+
+                                SizedBox(
+                                    height: ScreenUtil().setHeight(30),
+                                    child: Divider(
+                                        color: Colors.teal.shade300,
+
+                                    ),
+                                ),
+
+                                Container(
+                                    width: double.infinity,
+                                    child: TextButton(
+                                        onPressed: (){
+                                            Navigator.push(context, new MaterialPageRoute(builder: (context) => Weather(),),);
+                                        },
+                                        child: Text(
+                                            "Weather report",
                                             style: TextStyle(
                                                 fontSize: ScreenUtil().setSp(13),
                                                 color: Colors.green,
