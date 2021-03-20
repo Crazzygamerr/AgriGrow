@@ -67,9 +67,9 @@ class _HomePageState extends State<HomePage> {
     Widget build(BuildContext context) {
 
         return Scaffold(
-            //backgroundColor: Colors.teal,
+            backgroundColor: Colors.white,
             appBar: AppBar(
-                //backgroundColor: Colors.teal,
+                backgroundColor: Colors.green,
                 elevation: 0,
                 title: (!searching)
                         ? Text(chat?"Chats":"Experts")
@@ -81,10 +81,10 @@ class _HomePageState extends State<HomePage> {
                         });
                     },
                     style: TextStyle(
-                        //color: Colors.white,
+                        color: Colors.white,
                         fontSize: ScreenUtil().setSp(15),
                     ),
-                    //cursorColor: Colors.white,
+                    cursorColor: Colors.white,
                     onEditingComplete: (){
                         FocusScope.of(context).unfocus();
                     },
@@ -157,7 +157,7 @@ class _HomePageState extends State<HomePage> {
                                     height: ScreenUtil().setHeight(50),
                                 ),
 
-                                /*Row(
+                                Row(
                                     children: [
                                         SizedBox(
                                             width: ScreenUtil().setWidth(10),
@@ -173,16 +173,17 @@ class _HomePageState extends State<HomePage> {
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
                                                 Text(
-                                                    'agrigrow',
+                                                    'AgriGrow',
                                                     style: TextStyle(
-                                                        fontFamily: 'Pacifico',
+                                                        fontFamily: 'Tangerine',
                                                         fontSize: ScreenUtil().setSp(20),
-                                                        color: Colors.teal,
+                                                        fontStyle: FontStyle.italic,
+                                                        color: Colors.green,
                                                         fontWeight: FontWeight.bold,
                                                     ),
                                                 ),
                                                 Text(
-                                                    'Virtual Health CheckUp',
+                                                    'Farming and More...',
                                                     style: TextStyle(
                                                         fontFamily: 'Source Sans Pro',
                                                         color: Colors.teal.shade300,
@@ -209,16 +210,17 @@ class _HomePageState extends State<HomePage> {
                                         (email==null)?"":email,
                                         style: TextStyle(
                                             fontSize: ScreenUtil().setSp(20),
+                                            color: Colors.green.shade600,
                                         ),
                                     ),
                                 ),
                                 SizedBox(
-                                    height: ScreenUtil().setHeight(0),
+                                    height: ScreenUtil().setHeight(30),
                                     width: double.infinity,
                                     child: Divider(
                                         color: Colors.teal.shade300,
                                     ),
-                                ),*/
+                                ),
 
                                 (isExpert)?Container(
                                     width: double.infinity,
@@ -237,6 +239,7 @@ class _HomePageState extends State<HomePage> {
 
                                 SizedBox(
                                     height: ScreenUtil().setHeight((isExpert)?30:0),
+
                                 ),
 
                                 (!isExpert)?Container(
@@ -255,7 +258,7 @@ class _HomePageState extends State<HomePage> {
                                             "Experts",
                                             style: TextStyle(
                                                 fontSize: ScreenUtil().setSp(13),
-                                                ////color: Colors.white,
+                                                color: Colors.green,
                                             ),
                                         ),
                                     ),
@@ -263,6 +266,9 @@ class _HomePageState extends State<HomePage> {
 
                                 SizedBox(
                                     height: ScreenUtil().setHeight((!isExpert)?30:0),
+                                    child: Divider(
+                                        color: Colors.teal.shade300,
+                                    ),
                                 ),
 
                                 Container(
@@ -280,6 +286,7 @@ class _HomePageState extends State<HomePage> {
                                             "Chats",
                                             style: TextStyle(
                                                 fontSize: ScreenUtil().setSp(13),
+                                                color: Colors.green,
                                             ),
                                         ),
                                     ),
@@ -287,6 +294,9 @@ class _HomePageState extends State<HomePage> {
 
                                 SizedBox(
                                     height: ScreenUtil().setHeight(30),
+                                    child: Divider(
+                                        color: Colors.teal.shade300,
+                                    ),
                                 ),
 
                                 Container(
@@ -299,6 +309,7 @@ class _HomePageState extends State<HomePage> {
                                             "View Crops",
                                             style: TextStyle(
                                                 fontSize: ScreenUtil().setSp(13),
+                                                color: Colors.green,
                                             ),
                                         ),
                                     ),
@@ -306,6 +317,10 @@ class _HomePageState extends State<HomePage> {
 
                                 SizedBox(
                                     height: ScreenUtil().setHeight(30),
+                                    child: Divider(
+                                        color: Colors.teal.shade300,
+
+                                    ),
                                 ),
 
                                 Container(
@@ -318,6 +333,7 @@ class _HomePageState extends State<HomePage> {
                                             "Check MSP",
                                             style: TextStyle(
                                                 fontSize: ScreenUtil().setSp(13),
+                                                color: Colors.green,
                                             ),
                                         ),
                                     ),
@@ -325,8 +341,11 @@ class _HomePageState extends State<HomePage> {
                             ],
                         ),
 
-                        /*SizedBox(
-                            height: ScreenUtil().setHeight(350),
+                      /* SizedBox(
+                            height: ScreenUtil().setHeight(30),
+                            child: Divider(
+                                color: Colors.teal.shade300,
+                            ),
                         ),*/
                         Column(
                             children: [
@@ -334,7 +353,7 @@ class _HomePageState extends State<HomePage> {
                                     height: ScreenUtil().setHeight(20),
                                     width: double.infinity,
                                     child: Divider(
-                                        //color: Colors.teal.shade300,
+                                        color: Colors.teal.shade300,
                                     ),
                                 ),
                                 Container(
@@ -348,6 +367,8 @@ class _HomePageState extends State<HomePage> {
                                             "Log out",
                                             style: TextStyle(
                                                 fontSize: ScreenUtil().setSp(13),
+                                                color: Colors.green,
+
                                             ),
                                         ),
                                     ),
