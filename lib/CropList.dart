@@ -14,6 +14,7 @@ class _CropListState extends State<CropList> {
     Widget build(BuildContext context) {
         return Scaffold(
             appBar: AppBar(
+                backgroundColor: Colors.green,
                 title: Text(
                     "List of crops",
                     style: TextStyle(

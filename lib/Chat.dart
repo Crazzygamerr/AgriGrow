@@ -82,6 +82,13 @@ class _ChatState extends State<Chat> {
                     },
                     child: Icon(Icons.arrow_back_outlined),
                 ),
+                title: Text(
+                        ref.path.split("/")[isExpert?3:1],
+                    style: TextStyle(
+                        fontSize: ScreenUtil().setSp(18),
+                        color: Colors.white,
+                    ),
+                ),
             ),
             body: SafeArea(
                 child: Container(
