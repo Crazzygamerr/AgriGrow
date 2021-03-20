@@ -43,12 +43,12 @@ class _LoginState extends State<Login> {
                                     style: TextStyle(
                                         fontFamily: 'Pacifico',
                                         fontSize: ScreenUtil().setSp(40),
-                                        color: Colors.white,
+                                        //color: Colors.white,
                                         fontWeight: FontWeight.bold,
                                     ),
                                 ),
                                 Text(
-                                    '*insert dsecription here*',
+                                    'Farming and More...',
                                     style: TextStyle(
                                         fontFamily: 'Source Sans Pro',
                                         //color: Colors.teal.shade100,
@@ -70,14 +70,14 @@ class _LoginState extends State<Login> {
                                     controller: emailCon,
                                     keyboardType: TextInputType.emailAddress,
                                     style: TextStyle(
-                                        color: Colors.white,
+                                        //color: Colors.white,
                                         fontSize: ScreenUtil().setSp(15),
                                     ),
-                                    cursorColor: Colors.white,
+                                    //cursorColor: Colors.white,
                                     decoration: InputDecoration(
                                         labelText: 'Enter your email id',
                                         labelStyle: TextStyle(
-                                            color: Colors.white,
+                                            //color: Colors.white,
                                             fontSize: ScreenUtil().setSp(15),
                                         ),
                                     ),
@@ -88,14 +88,14 @@ class _LoginState extends State<Login> {
                                     keyboardType: TextInputType.visiblePassword,
                                     obscureText: true,
                                     style: TextStyle(
-                                        color: Colors.white,
+                                        //color: Colors.white,
                                         fontSize: ScreenUtil().setSp(15),
                                     ),
-                                    cursorColor: Colors.white,
+                                    //cursorColor: Colors.white,
                                     decoration: InputDecoration(
                                         labelText: 'Enter your Password',
                                         labelStyle: TextStyle(
-                                            color: Colors.white,
+                                            //color: Colors.white,
                                             fontSize: ScreenUtil().setSp(15),
                                         ),
                                     ),
@@ -153,7 +153,7 @@ class _LoginState extends State<Login> {
                                     child: Text(
                                         "New user? Register",
                                         style: TextStyle(
-                                            color: Colors.white,
+                                            //color: Colors.white,
                                         ),
                                     ),
                                 ),

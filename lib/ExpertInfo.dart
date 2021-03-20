@@ -78,7 +78,7 @@ class _ExpertInfoState extends State<ExpertInfo> {
                                     style: TextStyle(
                                         fontFamily: 'Pacifico',
                                         fontSize: ScreenUtil().setSp(40),
-                                        color: Colors.white,
+                                        //color: Colors.white,
                                         fontWeight: FontWeight.bold,
                                     ),
                                 ),
@@ -104,10 +104,10 @@ class _ExpertInfoState extends State<ExpertInfo> {
                                     controller: textCon1,
                                     keyboardType: TextInputType.text,
                                     style: TextStyle(
-                                        color: Colors.white,
+                                        //color: Colors.white,
                                         fontSize: ScreenUtil().setSp(15),
                                     ),
-                                    cursorColor: Colors.white,
+                                    //cursorColor: Colors.white,
                                     onEditingComplete: () {
                                         node.requestFocus();
                                     },
@@ -116,7 +116,7 @@ class _ExpertInfoState extends State<ExpertInfo> {
                                         hintText: 'Whats Your Name?',
                                         labelText: 'Name *',
                                         labelStyle: TextStyle(
-                                            color: Colors.white,
+                                            //color: Colors.white,
                                             fontSize: ScreenUtil().setSp(15),
                                         ),
                                     ),
@@ -129,16 +129,16 @@ class _ExpertInfoState extends State<ExpertInfo> {
                                     minLines: 1,
                                     maxLines: null,
                                     style: TextStyle(
-                                        color: Colors.white,
+                                        //color: Colors.white,
                                         fontSize: ScreenUtil().setSp(15),
                                     ),
-                                    cursorColor: Colors.white,
+                                    //cursorColor: Colors.white,
                                     decoration: InputDecoration(
                                         icon: Icon(Icons.person),
                                         hintText: 'From where have you graduated ?',
                                         labelText: 'Qualifications *',
                                         labelStyle: TextStyle(
-                                            color: Colors.white,
+                                            //color: Colors.white,
                                             fontSize: ScreenUtil().setSp(15),
                                         ),
                                     ),
@@ -149,16 +149,16 @@ class _ExpertInfoState extends State<ExpertInfo> {
                                     minLines: 1,
                                     maxLines: null,
                                     style: TextStyle(
-                                        color: Colors.white,
+                                        //color: Colors.white,
                                         fontSize: ScreenUtil().setSp(15),
                                     ),
-                                    cursorColor: Colors.white,
+                                    //cursorColor: Colors.white,
                                     decoration: InputDecoration(
                                         icon: Icon(Icons.person),
                                         hintText: 'In which field are you specialized ?',
                                         labelText: 'Specialization *',
                                         labelStyle: TextStyle(
-                                            color: Colors.white,
+                                            //color: Colors.white,
                                             fontSize: ScreenUtil().setSp(15),
                                         ),
                                     ),
@@ -169,16 +169,16 @@ class _ExpertInfoState extends State<ExpertInfo> {
                                     minLines: 1,
                                     maxLines: null,
                                     style: TextStyle(
-                                        color: Colors.white,
+                                        //color: Colors.white,
                                         fontSize: ScreenUtil().setSp(15),
                                     ),
-                                    cursorColor: Colors.white,
+                                    //cursorColor: Colors.white,
                                     decoration: InputDecoration(
                                         icon: Icon(Icons.person),
                                         hintText: 'Any field that you excel in',
                                         labelText: 'Expertise *',
                                         labelStyle: TextStyle(
-                                            color: Colors.white,
+                                            //color: Colors.white,
                                             fontSize: ScreenUtil().setSp(15),
                                         ),
                                     ),

@@ -55,7 +55,7 @@ class _CropScreenState extends State<CropScreen> {
                                 style: TextStyle(
                                     fontFamily: 'Source Sans Pro',
                                     fontSize: 50.0,
-                                    color: Colors.white,
+                                    //color: Colors.white,
                                     fontWeight: FontWeight.bold,
                                 ),
                             ),

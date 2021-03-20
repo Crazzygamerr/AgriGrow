@@ -79,7 +79,7 @@ class _ProfileState extends State<Profile> {
                                             child: Text(snapshot.data.data()["Name"].toString(),
                                                 style: TextStyle(
                                                     fontFamily: 'Source Sans Pro',
-                                                    color: Colors.white,
+                                                    //color: Colors.white,
                                                     fontSize: ScreenUtil().setSp(30),
                                                     fontWeight: FontWeight.normal,
                                                 ),
@@ -91,7 +91,7 @@ class _ProfileState extends State<Profile> {
                                             child: Text(snapshot.data.id.toString(),
                                                 style: TextStyle(
                                                     fontFamily: 'Source Sans Pro',
-                                                    color: Colors.white,
+                                                    //color: Colors.white,
                                                     fontSize: ScreenUtil().setSp(15),
                                                     fontWeight: FontWeight.normal,
                                                 ),
@@ -105,7 +105,7 @@ class _ProfileState extends State<Profile> {
                                                 Container(
                                                     height: ScreenUtil().setHeight(1),
                                                     width: ScreenUtil().setWidth(300),
-                                                    color: Colors.white,
+                                                    //color: Colors.white,
                                                 ),
                                                 SizedBox(
                                                     width: ScreenUtil().setWidth(10),
@@ -137,7 +137,7 @@ class _ProfileState extends State<Profile> {
                                                         Text("Specialization : ",
                                                             style: TextStyle(
                                                                 fontFamily: 'Source Sans Pro',
-                                                                color: Colors.white,
+                                                                //color: Colors.white,
                                                                 fontSize: ScreenUtil().setSp(18),
                                                                 fontWeight: FontWeight.bold,
                                                             ),
@@ -145,7 +145,7 @@ class _ProfileState extends State<Profile> {
                                                         Text(snapshot.data.data()["Specialization"].toString(),
                                                             style: TextStyle(
                                                                 fontFamily: 'Source Sans Pro',
-                                                                color: Colors.white,
+                                                                //color: Colors.white,
                                                                 fontSize: ScreenUtil().setSp(15),
                                                                 fontWeight: FontWeight.normal,
                                                             ),),
@@ -155,7 +155,7 @@ class _ProfileState extends State<Profile> {
                                                         Text("Qualifications : ",
                                                             style: TextStyle(
                                                                 fontFamily: 'Source Sans Pro',
-                                                                color: Colors.white,
+                                                                //color: Colors.white,
                                                                 fontSize: ScreenUtil().setSp(18),
                                                                 fontWeight: FontWeight.bold,
                                                             ),
@@ -163,7 +163,7 @@ class _ProfileState extends State<Profile> {
                                                         Text(snapshot.data.data()["Qualifications"].toString(),
                                                             style: TextStyle(
                                                                 fontFamily: 'Source Sans Pro',
-                                                                color: Colors.white,
+                                                                //color: Colors.white,
                                                                 fontSize: ScreenUtil().setSp(15),
                                                                 fontWeight: FontWeight.normal,
                                                             ),
@@ -174,7 +174,7 @@ class _ProfileState extends State<Profile> {
                                                         Text("Expertise :",
                                                             style: TextStyle(
                                                                 fontFamily: 'Source Sans Pro',
-                                                                color: Colors.white,
+                                                                //color: Colors.white,
                                                                 fontSize: ScreenUtil().setSp(18),
                                                                 fontWeight: FontWeight.bold,
                                                             ),
@@ -183,7 +183,7 @@ class _ProfileState extends State<Profile> {
                                                             snapshot.data.data()["Expertise"].toString(),
                                                             style: TextStyle(
                                                                 fontFamily: 'Source Sans Pro',
-                                                                color: Colors.white,
+                                                                //color: Colors.white,
                                                                 fontSize: ScreenUtil().setSp(15),
                                                                 fontWeight: FontWeight.normal,
                                                             ),

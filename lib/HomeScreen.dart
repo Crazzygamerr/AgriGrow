@@ -81,10 +81,10 @@ class _HomePageState extends State<HomePage> {
                         });
                     },
                     style: TextStyle(
-                        color: Colors.white,
+                        //color: Colors.white,
                         fontSize: ScreenUtil().setSp(15),
                     ),
-                    cursorColor: Colors.white,
+                    //cursorColor: Colors.white,
                     onEditingComplete: (){
                         FocusScope.of(context).unfocus();
                     },
@@ -255,7 +255,7 @@ class _HomePageState extends State<HomePage> {
                                             "Experts",
                                             style: TextStyle(
                                                 fontSize: ScreenUtil().setSp(13),
-                                                //color: Colors.white,
+                                                ////color: Colors.white,
                                             ),
                                         ),
                                     ),

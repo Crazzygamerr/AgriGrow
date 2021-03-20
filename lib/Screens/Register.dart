@@ -1,3 +1,4 @@
+import 'package:agrigrow/ExpertInfo.dart';
 import 'package:agrigrow/HomeScreen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -43,12 +44,12 @@ class _RegisterState extends State<Register> {
                                     style: TextStyle(
                                         fontFamily: 'Pacifico',
                                         fontSize: 40.0,
-                                        color: Colors.white,
+                                        //color: Colors.white,
                                         fontWeight: FontWeight.bold,
                                     ),
                                 ),
                                 Text(
-                                    '*insert descriptions here*',
+                                    'Farming and More...',
                                     style: TextStyle(
                                         fontFamily: 'Source Sans Pro',
                                         //color: Colors.teal.shade100,
@@ -69,14 +70,14 @@ class _RegisterState extends State<Register> {
                                     controller: emailCon,
                                     keyboardType: TextInputType.emailAddress,
                                     style: TextStyle(
-                                        color: Colors.white,
+                                        //color: Colors.white,
                                         fontSize: ScreenUtil().setSp(15),
                                     ),
-                                    cursorColor: Colors.white,
+                                    //cursorColor: Colors.white,
                                     decoration: InputDecoration(
                                         labelText: 'Enter your email id',
                                         labelStyle: TextStyle(
-                                            color: Colors.white,
+                                            //color: Colors.white,
                                             fontSize: ScreenUtil().setSp(15),
                                         ),
                                     ),
@@ -86,14 +87,14 @@ class _RegisterState extends State<Register> {
                                     keyboardType: TextInputType.visiblePassword,
                                     obscureText: true,
                                     style: TextStyle(
-                                        color: Colors.white,
+                                        //color: Colors.white,
                                         fontSize: ScreenUtil().setSp(15),
                                     ),
-                                    cursorColor: Colors.white,
+                                    //cursorColor: Colors.white,
                                     decoration: InputDecoration(
                                         labelText: 'Enter the Password',
                                         labelStyle: TextStyle(
-                                            color: Colors.white,
+                                            //color: Colors.white,
                                             fontSize: ScreenUtil().setSp(15),
                                         ),
                                     ),
@@ -148,7 +149,7 @@ class _RegisterState extends State<Register> {
                                             password: passCon.text.toString(),
                                         ).then((UserCredential user) {
                                             SharedPref.setUser(user.user.email, true, true);
-                                            //Navigator.pushAndRemoveUntil(context, new MaterialPageRoute(builder: (context) => (),), (route) => false);
+                                            Navigator.pushAndRemoveUntil(context, new MaterialPageRoute(builder: (context) => ExpertInfo(),), (route) => false);
                                         }).catchError((e){
                                             Fluttertoast.showToast(msg: e.message);
                                         });
@@ -180,7 +181,7 @@ class _RegisterState extends State<Register> {
                                     child: Text(
                                         "Existing user? Login",
                                         style: TextStyle(
-                                            color: Colors.white,
+                                            //color: Colors.white,
                                         ),
                                     ),
                                 ),
